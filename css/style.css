@@ -14,6 +14,7 @@ body{
     justify-content: center;
     padding: 0px 50px;
     font-family: 'Product Sans', sans-serif;
+    overflow-x: hidden;
 }
 h1,h2,p{
     margin: 0;
@@ -28,6 +29,14 @@ a{
     justify-content: space-between;
 }
 /* ----------------Left Box------------ */
+.Header{
+  position: absolute;
+  width: 95%;
+  top: 40px;
+  margin: 0 auto;
+  text-align: center;
+  color: aliceblue;
+}
 .left_box{
     width: 330px;
     height: 400px;

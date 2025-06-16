@@ -60,7 +60,7 @@ NextButton.addEventListener('click', () => {
         console.log('Incorrect');
         Answer2.style = 'background-color:red;'
     }
-    // ------Question 2--------
+    // ------Question 4--------
     if(Ques4.contains(Answer1)){
         Answer1.style = 'background-color:#5CB338;'
         console.log('Correct');
@@ -68,6 +68,7 @@ NextButton.addEventListener('click', () => {
         console.log('Incorrect');
         Answer1.style = 'background-color:red;'
     }
+    // -------------All Quiz Output
     if(Ques2.contains(Answer3) && Ques2.contains(Answer3) && Ques3.contains(Answer2) && Ques4.contains(Answer1)){
         ChangeQuiz.style = 'display:none;'
     }
