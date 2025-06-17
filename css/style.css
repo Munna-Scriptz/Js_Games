@@ -42,6 +42,10 @@ a{
 }
 .Header h1{
   font-weight: 600;
+  font-family: 'Baloo Tamma', cursive;
+  text-shadow: -1px -1px 0px #2196f3,
+    2px 2px 0px #2196f3,
+    6px 6px 0px #00000055;
 }
 .Completed{
   display: flex;
@@ -54,16 +58,19 @@ a{
   border-radius: 20px;
   background-color: grey;
   position: relative;
+  overflow: hidden;
 }
-.progress::after{
+.progress .progress_bar{
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   background: linear-gradient(#FF5E04 , #FA3663);
-  /* width: 25%; Dynamic */
+  width: 100%;
   border-radius: 20px;
+  transform: translateX(-300px);
+  transition: all 300ms ease-in-out;
 }
 .progressCounter{
   border: 3px solid #FA3663;
@@ -71,10 +78,13 @@ a{
   width: 50px;
   height: 50px;
   padding: 15px;
-  font-size: 24px;
+  font-size: 22px;
   display: flex;
   align-items: center;
   gap: 5px;
+  font-family: 'Baloo Tamma', cursive;
+  text-shadow: -1px -1px 0px #2196f3;
+
 }
 /* ----------------Left Box------------ */
 .left_box{
