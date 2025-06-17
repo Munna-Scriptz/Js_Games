@@ -4,7 +4,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../Images/Bakcground.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../Images/Background.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -166,11 +166,20 @@ a{
 .Container2{
   display: none;
 }
+.Container2 .Blank_box{
+  width: 80%;
+}
 .answer_box img{
   width: 95px;
 }
 
-
+/* -----------------Quiz 2--------------- */
+.Container1{
+  display: none;
+}
+.Container3 .Blank_box{
+  width: 80%;
+}
 
 
 

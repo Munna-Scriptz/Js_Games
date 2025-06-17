@@ -9,7 +9,7 @@ let Quiz2      = document.querySelector('.Container2')
 // ----Progress Dom
 let ProgressBar = document.querySelector('.progress_bar')
 let ProgressCount = document.querySelector('.ProgNum')
-
+let GuessHead = document.querySelector('.GuessHead')
 // ------------Drag Function Start
 draggableItems.forEach(item => {
     item.addEventListener('dragstart', () => {
@@ -84,6 +84,8 @@ NextButton.addEventListener('click', () => {
         setTimeout(() => {
             ProgressBar.style.transform = 'translateX(-200px)';
         }, 300);
+        GuessHead.innerHTML = 'Drag And Drop The Correct Animal Name'
+        document.body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)) ,url(./Images/Background2.jpg)"
     }
 })
 // ------------------Quiz 1 End---------------
