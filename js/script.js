@@ -7,6 +7,7 @@ let ChangeQuiz = document.querySelector('.Container1')
 // ----Progress Dom
 let ProgressBar = document.querySelector('.progress_bar')
 let ProgressCount = document.querySelector('.ProgNum')
+
 // ------------Drag Function Start
 draggableItems.forEach(item => {
     item.addEventListener('dragstart', () => {
@@ -28,14 +29,14 @@ draggableItems.forEach(item => {
 
 // -------------Next Button Function
 let NextButton = document.querySelector('.animated-button')
-let Answer1 = document.querySelector('.Answer1')
-let Ques1 = document.querySelector('.ques1')
-let Answer2 = document.querySelector('.Answer2')
-let Ques2 = document.querySelector('.ques2')
-let Answer3 = document.querySelector('.Answer3')
-let Ques3 = document.querySelector('.ques3')
-let Answer4 = document.querySelector('.Answer4')
-let Ques4 = document.querySelector('.ques4')
+let Answer1    = document.querySelector('.Answer1')
+let Ques1      = document.querySelector('.ques1')
+let Answer2    = document.querySelector('.Answer2')
+let Ques2      = document.querySelector('.ques2')
+let Answer3    = document.querySelector('.Answer3')
+let Ques3      = document.querySelector('.ques3')
+let Answer4    = document.querySelector('.Answer4')
+let Ques4      = document.querySelector('.ques4')
 
 NextButton.addEventListener('click', () => {
 
@@ -71,7 +72,101 @@ NextButton.addEventListener('click', () => {
         console.log('Incorrect');
         Answer1.style = 'background-color:red;'
     }
-    // -------------All Quiz Output
+
+    // -------------All Quiz Output 
+    if (Ques2.contains(Answer3) && Ques2.contains(Answer3) && Ques3.contains(Answer2) && Ques4.contains(Answer1)) {
+        ChangeQuiz.style = 'display:none;'
+        // --------ProgressBar
+        ProgressCount.innerHTML = 1
+        setTimeout(() => {
+            ProgressBar.style.transform = 'translateX(-200px)';
+        }, 300);
+    }
+})
+// ------------------Quiz 1 End---------------
+
+
+
+
+
+
+
+
+
+// ------------------Quiz 2---------------------
+// --------------All doms
+let draggableItems2 = document.querySelectorAll('.Box_items2')
+let dropTargets2 = document.querySelectorAll('.blank_Box2')
+let leftBox2 = document.querySelector('.left_box2')
+let SelectedItem2
+let ChangeQuiz2 = document.querySelector('.Container2')
+// ----Progress Dom
+
+// ------------Drag Function Start
+draggableItems2.forEach(item => {
+    item.addEventListener('dragstart', () => {
+        SelectedItem2 = item
+    })
+});
+
+[...dropTargets2, leftBox2].forEach(dropArea => {
+    dropArea.addEventListener('dragover', (e) => {
+        e.preventDefault()
+    })
+
+    dropArea.addEventListener('drop', () => {
+        if (SelectedItem2) {
+            dropArea.appendChild(SelectedItem2)
+        }
+    })
+})
+
+// -------------Next Button Function
+let Answer1    = document.querySelector('.Answer1')
+let Ques1      = document.querySelector('.ques1')
+let Answer2    = document.querySelector('.Answer2')
+let Ques2      = document.querySelector('.ques2')
+let Answer3    = document.querySelector('.Answer3')
+let Ques3      = document.querySelector('.ques3')
+let Answer4    = document.querySelector('.Answer4')
+let Ques4      = document.querySelector('.ques4')
+
+NextButton.addEventListener('click', () => {
+
+    // ------Question 1--------
+    if (Ques1.contains(Answer4)) {
+        Answer4.style = 'background-color:#5CB338;'
+        console.log('Correct');
+    } else {
+        console.log('Incorrect');
+        Answer4.style = 'background-color:red;'
+    }
+    // ------Question 2--------
+    if (Ques2.contains(Answer3)) {
+        Answer3.style = 'background-color:#5CB338;'
+        console.log('Correct');
+    } else {
+        console.log('Incorrect');
+        Answer3.style = 'background-color:red;'
+    }
+    // ------Question 3--------
+    if (Ques3.contains(Answer2)) {
+        Answer2.style = 'background-color:#5CB338;'
+        console.log('Correct');
+    } else {
+        console.log('Incorrect');
+        Answer2.style = 'background-color:red;'
+    }
+    // ------Question 4--------
+    if (Ques4.contains(Answer1)) {
+        Answer1.style = 'background-color:#5CB338;'
+        console.log('Correct');
+    } else {
+        console.log('Incorrect');
+        Answer1.style = 'background-color:red;'
+    }
+
+    // -------------All Quiz Output 
     if (Ques2.contains(Answer3) && Ques2.contains(Answer3) && Ques3.contains(Answer2) && Ques4.contains(Answer1)) {
         ChangeQuiz.style = 'display:none;'
         // --------ProgressBar

@@ -148,6 +148,19 @@ a{
     border-style: dashed;
     border-radius: 5px;
 }
+/* -----------------Quiz 2--------------- */
+.Container1{
+  display: none;
+}
+.answer_box img{
+  width: 95px;
+}
+
+
+
+
+
+
 /* ---------------Next Button----------------- */
 .animated-button {
   position: absolute;
