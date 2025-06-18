@@ -278,5 +278,11 @@ NextButton3.addEventListener('click', () => {
         GuessHead.innerHTML = ''
         WinCard.style = 'display:flex;'
         Quiz3.style = 'display:none;'
+        document.body.style = 'backdrop-filter: blur(10px);'
+        document.body.style.backgroundImage = "url(./Images/Background3.jpg)"
     }
 })
+// -------Win Card
+let PlayAgain = () =>{
+    window.location.reload()
+}
