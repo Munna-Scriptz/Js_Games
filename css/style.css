@@ -336,22 +336,26 @@ a {
   display: none;
   gap: 10px;
 }
+
 .winCard h3 {
   color: white;
   font-size: 30px;
   margin-top: 0px;
   margin-bottom: 2px;
 }
+
 .winCard p {
   color: rgb(187, 187, 187);
   font-size: 18px;
   width: 270px;
   text-align: center;
 }
+
 .winCard .particle {
-    position: absolute;
-    transform: translateY(-135px);
-  }
+  position: absolute;
+  transform: translateY(-135px);
+}
+
 .win_buttons {
   display: flex;
   align-items: center;
@@ -379,26 +383,30 @@ a {
   cursor: pointer;
 }
 
-.play_more{
+.play_more {
   display: flex;
   align-items: center;
   flex-direction: column;
   margin-top: 10px;
   gap: 10px;
 }
-.two_games{
+
+.two_games {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 25px;
   margin-top: 20px;
 }
+
 .two_games a {
   color: white;
 }
-.play_more p{
+
+.play_more p {
   font-size: 20px;
 }
+
 /* --------Text Shine--------- */
 .btn-shine {
   color: #fff;
@@ -413,46 +421,58 @@ a {
   white-space: nowrap;
   font-family: "Poppins", sans-serif;
 }
+
 @-moz-keyframes shine {
   0% {
     background-position: 0;
   }
+
   60% {
     background-position: 225px;
   }
+
   100% {
     background-position: 225px;
   }
 }
+
 @-webkit-keyframes shine {
   0% {
     background-position: 0;
   }
+
   60% {
     background-position: 225px;
   }
+
   100% {
     background-position: 225px;
   }
 }
+
 @-o-keyframes shine {
   0% {
     background-position: 0;
   }
+
   60% {
     background-position: 225px;
   }
+
   100% {
     background-position: 225px;
   }
 }
+
 @keyframes shine {
   0% {
     background-position: 0;
   }
+
   60% {
     background-position: 225px;
   }
+
   100% {
     background-position: 225px;
   }
@@ -608,6 +628,7 @@ a {
 .fil0 {
   fill: #fffdef;
 }
+
 /* --------Games--------------- */
 
 .button {
@@ -656,11 +677,9 @@ a {
   width: 100%;
   height: 100%;
   background-color: hsla(260 97% 61% / 0.75);
-  background-image: radial-gradient(
-      at 51% 89%,
+  background-image: radial-gradient(at 51% 89%,
       hsla(266, 45%, 74%, 1) 0px,
-      transparent 50%
-    ),
+      transparent 50%),
     radial-gradient(at 100% 100%, hsla(266, 36%, 60%, 1) 0px, transparent 50%),
     radial-gradient(at 22% 91%, hsla(266, 36%, 60%, 1) 0px, transparent 50%);
   background-position: top;
@@ -674,6 +693,7 @@ a {
 .button:is(:hover, :focus-visible) {
   --active: 1;
 }
+
 .button:active {
   transform: scale(1);
 }
@@ -723,11 +743,9 @@ a {
   position: relative;
   z-index: 10;
 
-  background-image: linear-gradient(
-    90deg,
-    hsla(0 0% 100% / 1) 0%,
-    hsla(0 0% 100% / var(--active, 0)) 120%
-  );
+  background-image: linear-gradient(90deg,
+      hsla(0 0% 100% / 1) 0%,
+      hsla(0 0% 100% / var(--active, 0)) 120%);
   background-clip: text;
 
   font-size: 1rem;
