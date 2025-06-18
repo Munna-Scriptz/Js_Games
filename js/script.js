@@ -289,3 +289,20 @@ let PlayAgain = () =>{
 
 
 // -------Footer
+let FooterBG = document.querySelector('.footer_bg')
+let CheckBox = document.querySelector('#checkbox2')
+let ShowGames = document.querySelector('.ShowGames')
+let ShowGamesAll = document.querySelector('.ShowGames')
+
+CheckBox.addEventListener('click', () =>{
+    FooterBG.classList.toggle('ExtendBg')
+    ShowGames.classList.toggle('ShowGamesAll')
+
+    if(ShowGames.classList[1]){
+    ShowGamesAll.style = 'visibility: visible; opacity: 1; transform: translateX(0px);'
+        console.log('yeah')
+    }
+    else{
+    ShowGamesAll.style = 'visibility: hidden; opacity: 0; transform: translateX(-140px);'
+    }
+})
