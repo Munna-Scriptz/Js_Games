@@ -286,3 +286,6 @@ NextButton3.addEventListener('click', () => {
 let PlayAgain = () =>{
     window.location.reload()
 }
+
+
+// -------Footer
