@@ -52,13 +52,19 @@ body{
 .All_Questions{
     margin-top: 100px;
 }
+.All_Inputs{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 5px;
+}
 .questionBox{
     width: 100%;
     padding-left: 10px;
     margin-top: 20px;
 }
 .singleQuestion{
-    padding: 10px 20px;
+    padding: 5px 20px;
 }
 .singleQuestion .QUESTION{
     font-size: 25px;
@@ -82,7 +88,16 @@ input[type="radio"]{
     cursor: pointer;
 }
 
-
+.L3 .questionBox {
+    padding-left: 10px;
+    margin-top: 10px;
+}
+.L3 .singleQuestion .QUESTION {
+    font-size: 23px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    color: red;
+}
 .main button{
     margin-top: 20px;
     padding: 15px 0;
@@ -106,18 +121,18 @@ input[type="radio"]{
  background: #E52020;
  color: ghostwhite;
 }
-button span {
+.main button span {
  position: relative;
  z-index: 10;
  transition: color 0.4s;
 }
 
-button:hover span {
+.main button:hover span {
  color: black;
 }
 
-button::before,
-button::after {
+.main button::before,
+.main button::after {
  position: absolute;
  top: 0;
  left: 0;
@@ -126,7 +141,7 @@ button::after {
  z-index: 0;
 }
 
-button::before {
+.main button::before {
  content: "";
  background: #000;
  width: 120%;
@@ -135,7 +150,7 @@ button::before {
  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
 }
 
-button:hover::before {
+.main button:hover::before {
  transform: translate3d(100%, 0, 0);
 }
 
@@ -166,13 +181,13 @@ button:hover::before {
 .result img{
     width: 100%;
     vertical-align: middle;
+    height: 400px;
     border-top-left-radius: 100px;
     border-bottom-right-radius: 100px;
 }
 .result{
     width: 600px;
     padding: 10px;
-    /* background: pink; */
     border: 1px solid palevioletred;
     border-radius: 5px;
     backdrop-filter: blur(10px);
