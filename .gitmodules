@@ -1,0 +1,3 @@
+[submodule "News-App"]
+	path = News-App
+	url = https://github.com/Munna-Scriptz/News-App.git
