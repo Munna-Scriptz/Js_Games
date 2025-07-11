@@ -1,3 +1,7 @@
 [submodule "News-App"]
 	path = News-App
 	url = https://github.com/Munna-Scriptz/News-App.git
+
+[submodule "img Search Engine js"]
+  path = img Search Engine js
+  url = https://github.com/Munna-Scriptz/Search_Engine.git
