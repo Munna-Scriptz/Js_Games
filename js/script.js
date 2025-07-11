@@ -101,7 +101,7 @@ NextButton.addEventListener('click', () => {
 
 
 
-// ------------------Quiz 3---------------------
+// ------------------Quiz 2---------------------
 // --------------All doms
 let draggableItems2 = document.querySelectorAll('.Box_items2')
 let dropTargets2 = document.querySelectorAll('.blank_Box2')
@@ -186,7 +186,7 @@ NextButton2.addEventListener('click', () => {
         }, 300);
         GuessHead.innerHTML = 'Drag And Drop The Correct Continent Name'
         GuessHead.style = `text-shadow: -1px -1px 0px #FFC107, 2px 2px 0px #ECE852, 6px 6px 0px #00000055;`
-        document.body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)) ,url(./Images/Background3.jpg)"
+        document.body.style.backgroundImage = "linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)) ,url(./Images/background3.jpg)"
     }
 })
 
@@ -279,7 +279,7 @@ NextButton3.addEventListener('click', () => {
         WinCard.style = 'display:flex;'
         Quiz3.style = 'display:none;'
         document.body.style = 'backdrop-filter: blur(10px);'
-        document.body.style.backgroundImage = "url(./Images/Background3.jpg)"
+        document.body.style.backgroundImage = "url(./Images/background3.jpg)"
     }
 })
 // -------Win Card
